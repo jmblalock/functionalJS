@@ -53,11 +53,21 @@
 
 // console.log(person);
 
-var person = [];
-var plea = "wouldShe";
+// var person = [];
+// var plea = "wouldShe";
 
-person.name = "Mrs. White";
+// person.name = "Mrs. White";
 
-person["plea"] = "I would never!";
+// person["plea"] = "I would never!";
 
-console.log(person.plea);
+// console.log(person.plea);
+
+var box = {};
+box['material'] = "cardboard";
+box[0] = 'meow';
+box['^&*'] = "testing 123";
+
+var test = box['^&*'];
+
+console.log(box);
+console.log(test);
