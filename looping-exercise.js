@@ -10,12 +10,19 @@ const game = {
   ]
 };
 
-// console.log(game);
+// for (let i = 0; i < game.suspects.length; i++) {
+//   console.log(game.suspects[i]);
+// }
+
+// for (let key in game) {
+//   console.log(game[key]);
+// }
 
 for (let i = 0; i < game.suspects.length; i++) {
-  console.log(game.suspects[i]);
-}
-
-for (let key in game) {
-  console.log(game[key]);
+  // console.log([i]);
+  for (key in game.suspects[i]) {
+    // console.log(key);
+    console.log(game.suspects[i]);
+    // console.log(game.suspects[i][key]);
+  }
 }
