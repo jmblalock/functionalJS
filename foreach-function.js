@@ -32,7 +32,7 @@ var rooms = ['observatory', 'ballroom', 'library'];
 //     console.log(val);
 // }
 
-rooms.forEach(room => console.log(room));
+// rooms.forEach(room => console.log(room));
 
 const _ = {};
 
@@ -52,10 +52,26 @@ _.each = function(list, callback) {
     }
 }
 
-_.each(['sally', 'sandy', 'lisa'], function(name, i, list) {
+const names = ['sally', 'sandy', 'lisa'];
+
+_.each(names, function(name, i, list) {
     if (list[i + 1]) {
         console.log(name, 'is younger than', list[i + 1] )
     } else {
         console.log(name, 'is the oldest');
     }
 });
+
+// const obj = {
+//     name: "Mrs. White",
+//     name: "Colonel Mustard",
+//     name: "Mr. Green"
+// };
+
+// _.each(obj, function(name, i, list) {
+//     if (list[i + 1]) {
+//         console.log(name, 'is younger than', list[i + 1] )
+//     } else {
+//         console.log(name, 'is the oldest');
+//     }
+// });
